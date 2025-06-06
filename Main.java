@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
-    private static final int MAX_USERS = 15; // Ліміт котиків! Більше 15 — і сервер накриється(!
-    private static String[] usernames = new String[MAX_USERS]; // Імена наших пухнастих друзів
-    private static String[] passwords = new String[MAX_USERS]; // Секретні паролі для котячого клубу
-    private static int userCount = 0; // Лічильник муркотунів
+    private static final int MAX_USERS = 15;
+    private static String[] usernames = new String[MAX_USERS];
+    private static String[] passwords = new String[MAX_USERS];
+    private static int userCount = 0;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -131,6 +131,6 @@ public class Main {
             if (Character.isDigit(c)) digits++;
             else if (!Character.isLetter(c)) special = true;
         }
-        return digits >= 3 && special; //  Котики рекомендують складні паролі!
+        return digits >= 3 && special;
     }
 }
